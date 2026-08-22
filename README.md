@@ -1,17 +1,76 @@
-# React + Vite
+# Brewing Edge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium React + Vite ecommerce website for **Brewing Edge**, a coffee equipment collection powered by **BuyHoreca**.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Brewing Edge focuses on coffee equipment, brewing tools and accessories for people who care about precision, consistency and better brewing.
 
-## React Compiler
+The website connects the Brewing Edge storefront experience with BuyHoreca's ecommerce platform.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Premium responsive ecommerce interface
+- Brewing Edge hero video
+- Shopify product integration
+- Featured product grid
+- Full product shop
+- Product search
+- Product filtering
+- Category filtering
+- Price range filtering
+- Product sorting
+- Individual product pages
+- BuyHoreca product purchasing links
+- Separate Categories page
+- About Brewing Edge page
+- Brew Guides page
+- Contact page
+- Responsive mobile navigation
+- Animated brand ribbon
+- Product hover interactions
+- Premium dark and cream visual system
+- BuyHoreca footer integration
+- SEO metadata
+- Open Graph metadata
+- Twitter metadata
+- JSON-LD structured data
+- Responsive layouts for desktop, tablet and mobile
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# Brewing-edge" 
+## Tech Stack
+
+- React
+- Vite
+- React Router
+- Shopify Storefront API
+- JavaScript
+- CSS
+- ESLint
+
+## Project Structure
+
+```text
+Brewing-edge/
+├── public/
+├── src/
+│   ├── assets/
+│   │   ├── brewing-edge-logo.png
+│   │   ├── brewing-edge-bg.mp4
+│   │   ├── buyhoreca-logo.svg
+│   │   ├── brewing-edge-about.jpg
+│   │   ├── brewing-edge-brand-story.jpg
+│   │   ├── brewing-edge-guides.jpg
+│   │   └── brewing-edge-philosophy.jpg
+│   ├── lib/
+│   │   └── shopify.js
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
