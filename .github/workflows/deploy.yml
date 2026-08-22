@@ -39,14 +39,17 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          VITE_SHOPIFY_STORE_DOMAIN: ${{ secrets.VITE_SHOPIFY_STORE_DOMAIN }}
+          VITE_SHOPIFY_STOREFRONT_ACCESS_TOKEN: ${{ secrets.VITE_SHOPIFY_STOREFRONT_ACCESS_TOKEN }}
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload dist
+      - name: Upload production build
         uses: actions/upload-pages-artifact@v4
         with:
-          path: "./dist"
+          path: ./dist
 
       - name: Deploy to GitHub Pages
         id: deployment
