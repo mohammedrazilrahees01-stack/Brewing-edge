@@ -49,6 +49,11 @@
     />
 
     <meta
+      property="og:url"
+      content="https://mohammedrazilrahees01-stack.github.io/Brewing-edge/"
+    />
+
+    <meta
       name="twitter:card"
       content="summary_large_image"
     />
@@ -65,7 +70,7 @@
 
     <link
       rel="canonical"
-      href="/"
+      href="https://mohammedrazilrahees01-stack.github.io/Brewing-edge/"
     />
 
     <link
@@ -93,13 +98,23 @@
         "@graph": [
           {
             "@type": "Organization",
-            "@id": "/#organization",
-            "name": "Brewing Edge"
+            "@id": "https://mohammedrazilrahees01-stack.github.io/Brewing-edge/#organization",
+            "name": "Brewing Edge",
+            "url": "https://mohammedrazilrahees01-stack.github.io/Brewing-edge/",
+            "parentOrganization": {
+              "@type": "Organization",
+              "name": "BuyHoreca",
+              "url": "https://buyhoreca.com"
+            }
           },
           {
             "@type": "WebSite",
-            "@id": "/#website",
-            "name": "Brewing Edge"
+            "@id": "https://mohammedrazilrahees01-stack.github.io/Brewing-edge/#website",
+            "name": "Brewing Edge",
+            "url": "https://mohammedrazilrahees01-stack.github.io/Brewing-edge/",
+            "publisher": {
+              "@id": "https://mohammedrazilrahees01-stack.github.io/Brewing-edge/#organization"
+            }
           }
         ]
       }
@@ -115,7 +130,7 @@
 
     <script
       type="module"
-      src="/src/main.jsx"
+      src="./src/main.jsx"
     ></script>
   </body>
 </html>
