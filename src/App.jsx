@@ -36,10 +36,9 @@ const BUYHORECA_CONTACT = {
   mobile: "+971 56 533 4464",
   email: "support@buyhoreca.com",
 };
-
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Brewing-edge">
       <ScrollToTop />
       <RouteSEO />
 
