@@ -18,7 +18,24 @@ img,video{display:block;max-width:100%} ::selection{background:var(--copper);col
 .site-shell{min-height:100vh;overflow:clip;background:var(--cream-soft);color:var(--ink)}
 .section-shell{width:min(1360px,calc(100% - 10vw));margin:0 auto}
 .eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 24px;color:rgba(255,255,255,.72);font:500 10px/1.2 var(--mono);letter-spacing:.18em;text-transform:uppercase}
-.eyebrow span,.eyebrow::before{content:"";width:26px;height:1px;background:currentColor;opacity:.7}
+.eyebrow::before,
+.eyebrow::after {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.7;
+  vertical-align: middle;
+}
+
+.eyebrow::before {
+  margin-right: 12px;
+}
+
+.eyebrow::after {
+  margin-left: 12px;
+}
 .eyebrow-dark{color:#77746d}.eyebrow-dark::before{background:var(--copper);opacity:1}
 .text-link{display:inline-flex;align-items:center;gap:10px;font:700 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase}
 .text-link span{transition:transform .35s ease}.text-link:hover span{transform:translate(4px,-3px)}
